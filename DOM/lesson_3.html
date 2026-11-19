@@ -13,7 +13,11 @@
         let text = document.querySelector(".paragraph")
         let changeBtn  = document.querySelector('.btn')
 
-        changeBtn.addEventListener('click', ()=>{text.textContent = "Dark Mode";})
+        changeBtn.addEventListener('click', ()=>{
+            text.textContent = "Dark Mode";
+            document.body.style.backgroundColor = "black"
+            document.body.style.color = "white"
+        })
 
         console.log(text)
     </script>
